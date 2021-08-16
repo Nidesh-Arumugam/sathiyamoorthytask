@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"></link>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css ">
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+
+<body>
+
+  <div class="row top-menu">
+    <div class="column">
+      <div class="card active">
+        <a href="#heading">Heading</a>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <a href="#sidebar">Sidebar</a>
+
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <a href="#mainbody">Main body</a>
+
+      </div>
+    </div>
+  </div>
+  <div id="heading" class="row active">
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="bgcolor" value="red" />
+        <span>Background color</span>
+      </div>
+      <div>
+        <input type='text' id="Menu" value="#fff" />
+        <span>Menu text Color</span>
+      </div>
+
+    </div>
+
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="name" value="#fff" />
+        <span>Your Name</span>
+      </div>
+      <div>
+        <input type='text' id="designation" value="#fff" />
+        <span>Designation</span>
+      </div>
+
+
+    </div>
+
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="contact" value="#fff" />
+        <span>Contact button Color</span>
+      </div>
+      <div>
+        <input type='text' id="contact-text" value="red" />
+        <span>Contact button text Color</span>
+      </div>
+
+    </div>
+  </div>
+  <div id="sidebar" class="row hide">
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="bgcolor" value="red" />
+        <span>Get in Touch Button color</span>
+      </div>
+      <div>
+        <input type='text' id="Menu" value="#fff" />
+        <span>Get in Touch text color</span>
+      </div>
+
+    </div>
+
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="name" value="#fff" />
+        <span>Website text color</span>
+      </div>
+      <div>
+        <input type='text' id="designation" value="#fff" />
+        <span>Website text color</span>
+      </div>
+
+
+    </div>
+
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="contact" value="#fff" />
+        <span>Phone button Color</span>
+      </div>
+      <div>
+        <input type='text' id="contact-text" value="red" />
+        <span>Phone button text Color</span>
+      </div>
+
+    </div>
+  </div>
+  <div id="mainbody" class="row hide">
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="bgcolor" value="red" />
+        <span>Profile Background color</span>
+      </div>
+      <div>
+        <input type='text' id="Menu" value="#fff" />
+        <span>Profile text Color</span>
+      </div>
+
+    </div>
+
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="name" value="#fff" />
+        <span>Profile Button color</span>
+      </div>
+      <div>
+        <input type='text' id="designation" value="#fff" />
+        <span>Profile Button Text color</span>
+      </div>
+
+
+    </div>
+
+    <div class="column spectrum">
+      <div>
+        <input type='text' id="contact" value="#fff" />
+        <span>Hyperlink Color</span>
+      </div>
+
+
+    </div>
+  </div>
+  <header class="output render" id="header">
+    <i class='fas fa-user-circle' style='font-size:35px;color:rgb(243 243 243)'></i>
+    <div class="designation">
+
+      <label id="name">Sathiya Moorthy</label>
+      <span id="role">UI Developer</span>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a class="active" href="#contact">Contact me</a>
+        </li>
+        <li>
+          <a class="menu-link" href="#Home">Home</a>
+        </li>
+        <li>
+          <a class="menu-link" href="#getintouch">Get in Touch</a>
+        </li>
+
+      </ul>
+    </div>
+    </div>
+  </header>
+  <!-- <div class="body">
+    <section>
+        <h3>They are many variation of pages</h3>
+        <p>They are many variation of pages Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>They are many variation of pages Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <article>
+          <i class='fas fa-user-circle' style='font-size:35px;color:rgb(243 243 243)'></i>
+          <div class="designation">
+            
+              <label>Sathiya Moorthy</label>
+              <span>UI Developer</span>
+          </div>
+      </article>
+    </section>
+  
+    <aside>
+      asfadf
+    </aside>
+  </div> -->
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

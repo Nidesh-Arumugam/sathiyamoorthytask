@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px;
+    cursor: pointer;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 33.333%;
+    padding: 0 10px;
+    position: relative;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    background-color: #f1f1f1;
+  }
+  .card.active{background-color: #0099d7;color:#fff}
+  .card.active a{
+    color: #fff;
+  }
+  .card.active:after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+    left: 50%;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid #0099d7;
+  }
+  
+
+  .spectrum {margin-top: 10px;}
+  .spectrum > div{margin: 10px 0px;}
+  /* .spectrum div:first-child{padding: 15px 5px;} */
+
+  header{
+     display: flex;
+    margin-top: 10px;
+      padding: 14px
+  }
+  header .menu{
+    margin-left: auto;
+  }
+  header .menu .active{
+    background-color: #fff;
+    color: #f10808;
+  }
+.designation{
+  display: flex;
+  flex-direction: column;
+}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #fff;
+    color: red;
+  }
+
+
+.body section{
+  flex-basis: 75%;
+}
+.body aside{
+  flex-basis: 25%;
+}
+.body{
+  display: flex;
+}
+
+/*designation*/
+.designation label{
+  font-size: 20px;
+  color: #fff;
+  margin: 2px 10px;
+  font-weight: 600;
+}
+.designation span{
+  font-size: 14px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.row.active{
+  display: block;
+}
+
+.row.hide{
+  display: none;
+}
+
+.sp-replacer{border-radius: 4px;}
